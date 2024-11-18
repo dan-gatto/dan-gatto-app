@@ -7,10 +7,6 @@ interface ListItemProps {
   onDelete: (id: number) => void;
 }
 
-const divStyle = {
-  paddingTop: '6px',
-};
-
 const fontSize = {
   fontSize: '1em',
 };
