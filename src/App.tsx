@@ -14,8 +14,14 @@ function App() {
   const [inputValue, setInputValue] = useState('');
   const [listItems, setListItems] = useState<iListItem[]>([]);
 
-  const updateInput = function (inputValue: string) {
-    setInputValue(inputValue);
+  function handleKeyDown(e: React.KeyboardEvent) {
+    if (e.key === 'Enter') {
+      addToListItems();
+    }
+  }
+
+  const updateInput = function (userInput: string) {
+    setInputValue(userInput);
   };
 
   const addToListItems = function () {
@@ -61,6 +67,7 @@ function App() {
             className='form-control rounded'
             id='usr'
             maxLength={50}
+            onKeyDown={handleKeyDown}
           />
         </div>
         <div className='row'>
