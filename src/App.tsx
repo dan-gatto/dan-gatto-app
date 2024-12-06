@@ -51,7 +51,7 @@ function App() {
     <div className='App'>
       <AppHeader></AppHeader>
       <div className='container'>
-        <PageTitle pageTitle='Create List'></PageTitle>
+        <PageTitle pageTitle='Create A List'></PageTitle>
         <div className='row' id='newItem'>
           New Item
         </div>
