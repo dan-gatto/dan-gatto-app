@@ -51,14 +51,14 @@ function App() {
     <div className='App'>
       <AppHeader></AppHeader>
       <div className='container'>
-        <PageTitle pageTitle='Item List'></PageTitle>
-        <div className='row' id='newItem'>
-          New Item
+        <PageTitle pageTitle='Daniel Gatto Web App'></PageTitle>
+        <div className='row inputArea' id='newItem'>
+          Add items to list
         </div>
         <div className='row'>
           <br></br>
         </div>
-        <div className='row'>
+        <div className='row inputArea'>
           <input
             name='myInput'
             type='text'
@@ -73,17 +73,17 @@ function App() {
         <div className='row'>
           <br></br>
         </div>
-        <div className='row'>
+        <div className='row inputArea'>
           <button
             type='button'
             className='btn btn-primary'
             onClick={addToListItems}
           >
-            Add Item To List
+            Add Item
           </button>
         </div>
 
-        <div>
+        <div className='inputArea'>
           {listItems.map((item) => (
             <ListItem
               key={item.id}

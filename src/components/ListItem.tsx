@@ -17,7 +17,7 @@ const ListItem = ({ itemId, itemText, onDelete }: ListItemProps) => {
       <div className='row'>
         <br></br>
       </div>
-      <div className='col-sm'>
+      <div className='col-sm itemAddedText'>
         <div className='addedItem'>
           <div className='text-start' style={fontSize}>
             {itemText}
@@ -29,6 +29,7 @@ const ListItem = ({ itemId, itemText, onDelete }: ListItemProps) => {
         <button
           type='button'
           className='btn btn-primary'
+          id='deleteBtn'
           onClick={() => onDelete(itemId)}
         >
           Delete

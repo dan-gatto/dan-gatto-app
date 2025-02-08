@@ -14,3 +14,19 @@
   margin: 1em 1em 1em 1em;
   background-color: coral;
 }
+
+.inputArea {
+  width: 50%;
+}
+
+.container {
+  margin-left: 32px !important;
+}
+
+#deleteBtn {
+  margin-right: 12px;
+}
+
+.itemAddedText {
+  padding-left: 0px !important;
+}
