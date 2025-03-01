@@ -30,3 +30,7 @@
 .itemAddedText {
   padding-left: 0px !important;
 }
+
+.itemSpan {
+  margin-left: 5px;
+}

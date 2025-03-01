@@ -20,7 +20,7 @@ const ListItem = ({ itemId, itemText, onDelete }: ListItemProps) => {
       <div className='col-sm itemAddedText'>
         <div className='addedItem'>
           <div className='text-start' style={fontSize}>
-            {itemText}
+            <span className='itemSpan'>{itemText}</span>
           </div>
         </div>
       </div>
