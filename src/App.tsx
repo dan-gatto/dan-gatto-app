@@ -25,7 +25,7 @@ function App() {
   };
 
   const addToListItems = function () {
-    if (!inputValue) {
+    if (!inputValue.trim()) {
       return;
     }
 
